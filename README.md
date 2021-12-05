@@ -12,20 +12,21 @@ The main services to try against are
  * HashiCorp vault as OIDC / SAML
  * AWS OIDC / SAML providers
 
-
 ## Features
 
 ### Login
 
- - [ ] configuration file for multiple Okta
-    - [ ] select config file
+ - [~] configuration file for multiple Okta
+    - [x] select config file
     - [ ] select config via environment variables
- - [ ] Use system's keychain to store password
- - [ ] Support MFA prompts
-    - [ ] FIDO2
+ - [x] Use system's keychain to store password
+ - [~] Support MFA prompts
+    - [x] FIDO2
     - [ ] TOTP
     - [ ] Mobile push
 
-## App authneticate
+## App authentication
 
-
+ - [ ] Support SAML app
+ - [ ] Support OIDC app
+ - [ ] Support app level MFA prompts 
