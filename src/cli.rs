@@ -10,7 +10,7 @@ pub(crate) fn get_app() -> App<'static> {
                 .long("config")
                 .short('c')
                 .value_name("CONFIG_FILE")
-                .about("Sets a custom config file")
+                .help("Sets a custom config file")
                 .takes_value(true),
         )
         .arg(
@@ -18,7 +18,7 @@ pub(crate) fn get_app() -> App<'static> {
                 .long("verbose")
                 .short('v')
                 .multiple_occurrences(true)
-                .about("Sets the level of verbosity"),
+                .help("Sets the level of verbosity")
         )
         .subcommand(
             App::new("init")
@@ -27,7 +27,7 @@ pub(crate) fn get_app() -> App<'static> {
                     Arg::new("profile")
                         .long("profile")
                         .short('p')
-                        .about("Name of profile to configure")
+                        .help("Name of profile to configure")
                         .default_value("default")
                         .takes_value(true),
                 )
@@ -35,7 +35,7 @@ pub(crate) fn get_app() -> App<'static> {
                     Arg::new("okta-domain")
                         .long("domain")
                         .short('d')
-                        .about("Okta domain to authneticate to (e.g. example.okta.com)")
+                        .help("Okta domain to authneticate to (e.g. example.okta.com)")
                         .required(true)
                         .takes_value(true),
                 )
@@ -43,7 +43,7 @@ pub(crate) fn get_app() -> App<'static> {
                     Arg::new("username")
                         .long("username")
                         .short('u')
-                        .about("Username to authenticate with")
+                        .help("Username to authenticate with")
                         .required(true)
                         .takes_value(true),
                 ),
@@ -55,7 +55,7 @@ pub(crate) fn get_app() -> App<'static> {
                     Arg::new("profile")
                         .long("profile")
                         .short('p')
-                        .about("Name of profile to use")
+                        .help("Name of profile to use")
                         .default_value("default")
                         .takes_value(true),
                 )

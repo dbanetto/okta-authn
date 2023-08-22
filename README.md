@@ -16,17 +16,28 @@ The main services to try against are
 
 ### Login
 
+Get a login session from Okta
+
  - [~] configuration file for multiple Okta
     - [x] select config file
     - [ ] select config via environment variables
  - [x] Use system's keychain to store password
  - [~] Support MFA prompts
-    - [x] FIDO2
+    - [x] WebAuthn / CTAP2
+    - [ ] U2F / FIDO / CTAP1
     - [ ] TOTP
     - [ ] Mobile push
 
-## App authentication
+### App authentication
+
+Convert the session into an application session
 
  - [ ] Support SAML app
  - [ ] Support OIDC app
  - [ ] Support app level MFA prompts 
+
+### App support
+
+ - [ ] AWS credential helper
+ - [ ] git credential helper
+ - [ ] HashiCorp vault

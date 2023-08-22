@@ -4,7 +4,7 @@ use std::io;
 use std::io::prelude::*;
 use std::path::PathBuf;
 
-use tracing::{debug, error, info, warn};
+use tracing::debug;
 
 
 #[derive(serde::Serialize, serde::Deserialize, Debug)]
